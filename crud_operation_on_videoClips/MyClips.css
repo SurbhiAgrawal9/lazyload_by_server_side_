@@ -1,0 +1,139 @@
+.my-clips {
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+.clip-form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #ec4899;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.title-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ec4899;
+  background-color: #222;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.description-input {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #ec4899;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.description-input textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  resize: none;
+}
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.upload-label .camera-icon {
+  margin-right: 10px;
+}
+
+.upload-input {
+  display: none;
+}
+
+.add-clips-button {
+  padding: 10px 20px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Grid for clips */
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.clip-card {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.clip-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.clip-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Modal for editing clips */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.edit-modal input,
+.edit-modal textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ec4899;
+  background: #fff;
+}
+
+.edit-modal button {
+  padding: 10px 20px;
+  background-color: #ec4899;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
